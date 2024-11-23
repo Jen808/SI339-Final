@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lalezar&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Warp&display=swap');
+
+/* 
+========================================
+root
+======================================== 
+*/
+
+:root 
+{
+
+  --pink:#FFDFDF;
+  --teal:#005E70;
+}
+
+
+
+
+/* 
+========================================
+Default
+======================================== 
+*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    cursor: none;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+/* 
+========================================
+Home - Main
+======================================== 
+*/
+
+
+
+.home-main {
+    height: 50vh;
+    width: 100%;
+    background-image: url("src/home-bg.png");
+    position: sticky;
+    top: 0 !important;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 1000px) {
+
+    .home-main {
+        height: 50vh;
+        position: sticky;
+        top: 80px !important;
+        margin-top: 80px;
+
+    }
+
+}
+
+
+
+.intro-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #FFDFDFD9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: inherit;
+    animation: fadeIn 0.8s ease-in;
+}
+
+@media (max-width: 1000px) {
+
+    .intro-overlay {
+        position: sticky;
+        height: inherit;
+
+
+
+    }
+
+}
+
+
+
+
+.intro-name {
+    font-family: "Tilt Warp", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 5em;
+    color:var(--teal);
+    animation: fadeInDown 2s ease-in-out;
+}
+
+
+
+@media (max-width: 1000px) {
+    .intro-name{
+        font-size: 3.8em;
+
+    }
+}
+
+@media (max-width: 580px) {
+    .intro-name{
+        font-size: 2.8em;
+        text-align: center;
+
+    }
+}
+
+
+
+
+
+
+
+.intro-me {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 26px;
+    text-wrap: wrap;
+    width: 700px;
+    animation: slideInUp 2s ease-in-out;
+
+}
+
+
+
+@media (max-width: 1000px) {
+    .intro-me{
+        font-size: 16px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 580px) {
+    .intro-me{
+        font-size: 16px;
+        line-height: 20px;
+        width: 80vw;
+    }
+}
+
+
+
+.github-button{
+    width: 160px;
+    height: 50px;
+    background-color: #FFF;
+    color: var(--teal);
+    border-style: none;
+    border: solid 1px var(--teal);
+    border-radius: 30px;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: none;
+    animation: fadeIn 2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+a.github-button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-top: 16px;
+    text-decoration: none;
+}
+
+
+
+.github-button:hover{
+
+    background-color: var(--teal);
+    color: var(--pink);
+    border: solid 1px var(--teal);
+
+}
+
+
+
+
+.intro-github{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-top: 16px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+
+
+}
+
+
+@media (max-width: 1000px) {
+    .intro-github{
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width: 580px) {
+    .intro-github{
+        font-size: 14px;
+        width: 60vw;
+        line-height: 18px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 
+========================================
+Home - UX
+======================================== 
+*/
+
+
+
+/* Layout */
+
+.projects {
+    display: grid;
+    grid-template-columns: 420px 420px 420px;
+    gap: 64px;
+    padding: 80px 0;
+    z-index: 2;
+
+
+
+}
+
+.sec {
+
+    height: 330px;
+    width: 410px;
+    background-color: white;
+    border-radius: 2rem;
+    overflow: hidden;
+    pointer-events: auto;
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); */
+    /* opacity: 0;
+    filter: blur(15px);
+    transition: all 2s; */
+
+
+
+}
+
+
+/* .sec.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+ */
+
+
+.sec-ing {
+
+    height: 330px;
+    width: 410px;
+    background-color: white;
+    border-radius: 2rem;
+    overflow: hidden;
+    pointer-events: auto;
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); */
+}
+
+
+
+
+.pj-center {
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+    margin-top: 0vh; 
+    box-shadow: 0px -5px 8px rgba(0,0,0,0.2);
+
+}
+
+@media (max-width: 1000px) {
+
+    .pj-center {
+        padding-top: 5em;
+        width: auto;
+    
+    }
+    
+
+}
+
+
+
+
+
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.pj {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+@media (max-width: 1440px) {
+
+    .projects {
+        display: grid;
+        grid-template-columns: 420px 420px;
+        gap: 64px;
+
+
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+
+    .projects {
+        display: grid;
+        grid-template-columns: 420px;
+        gap: 64px;
+
+
+    }
+
+}
+
+
+
+
+@media (max-width: 530px) {
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .sec {
+
+        height: 70vw;
+        width: 90vw;
+    }
+
+    .sec-ing {
+
+        height: 70vw;
+        width: 90vw;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* Border */
+
+
+#sec-ing {
+    border: solid 3px #c8c8c8;
+
+}
+
+#sec-livmate {
+    border: solid 3px #0AD0C7;
+
+}
+
+#sec-mywiddy {
+    border: solid 3px #5B524B;
+}
+
+#sec-roosroast {
+    border: solid 3px #CF845F;
+}
+
+#sec-glansis {
+    border: solid 3px #0085ca;
+}
+
+#sec-vendors {
+    border: solid 3px #febd41;
+}
+
+#sec-ife {
+    border: solid 3px #87CFD3;
+}
+
+
+
+/* 
+ .sec {
+    border: thick double var(--teal);
+    border-radius: 0;
+ }
+ */
+
+ 
+
+
+
+
+/* Overlay des */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.overlay h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 600;
+    text-align: center;
+    text-wrap: wrap;
+    width: 340px;
+}
+
+.overlay p1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
+    text-wrap: wrap;
+    width: 340px;
+
+}
+
+
+#o-livmate {
+    background-color: rgba(11, 100, 119, 0.9);
+    color: white;
+}
+
+#sec-livmate:hover .overlay {
+    opacity: 1;
+
+}
+
+
+
+
+#o-roosroast {
+    background-color: rgba(184, 201, 195, 0.9);
+    color: #000;
+}
+
+#sec-roosroast:hover .overlay {
+    opacity: 1;
+
+}
+
+
+#o-glansis {
+    background-color: rgba(0, 48, 135, 0.9);
+    color: #FFF;
+}
+
+#sec-glansis:hover .overlay {
+    opacity: 1;
+
+}
+
+
+
+#o-mywiddy {
+    background-color: rgb(255, 141, 58, 0.9);
+    color: #FFF;
+}
+
+#sec-mywiddy:hover .overlay {
+    opacity: 1;
+
+}
+
+
+
+
+
+#o-vendors {
+    background-color: rgba(255, 235, 163, 0.9);
+    color: #000;
+}
+
+#sec-vendors:hover .overlay {
+    opacity: 1;
+
+}
+
+
+
+
+#o-ife {
+    background-color: rgba(14, 154, 164, 0.9);
+    color: #000;
+}
+
+#sec-ife:hover .overlay {
+    opacity: 1;
+
+}
+
+
+
+#o-ing {
+    background-color: rgba(46, 46, 46, 0.9);
+    color: #FFF;
+}
+
+#sec-ing:hover .overlay {
+    opacity: 1;
+
+}
+
+
+
+
+
+
+/* 
+========================================
+Footer
+======================================== 
+*/
+
+
+
+
+
+.footer {
+    height: 25vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ty-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+
+.footer-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    height: 5vh;
+    width: auto;
+    padding: 2em 0;
+}
+
+.email-footer,
+.linkedin-footer {
+    height: 5vh;
+    width: auto;
+}
+
+.copyright {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 0.9em;
+
+}
+
+.ux-sort {
+    font-size: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-bottom: 3em;
+
+}

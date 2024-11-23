@@ -516,3 +516,14 @@ burger
     }
 
 }
+
+
+
+@media (prefers-reduced-motion) {
+
+    .logo{
+        animation: none;
+        transition: none;
+    }
+
+}

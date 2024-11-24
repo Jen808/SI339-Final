@@ -155,7 +155,7 @@ Profile img
 }
 
 
-@media (min-width: 1530px) {
+@media (max-width: 1530px) {
 
     #profile-img,
     #profile-img-s,

@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const pageloads = [
 
 
-        { id: 'sec-roosroast', url: 'roosroast.html' },
-        { id: 'sec-glansis', url: 'glansis.html' },
+        // { id: 'sec-roosroast', url: 'roosroast.html' },
+        // { id: 'sec-glansis', url: 'glansis.html' },
         { id: 'sec-livmate', url: 'LivMate.html' },
 
     ];

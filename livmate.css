@@ -712,7 +712,7 @@ pj shift button
 
 
 .shift-previous {
-    background-color: var(--color-title);
+    background-color: var(--color-main);
     /* margin-right: 2vw; */
     cursor: none;
     color: white;

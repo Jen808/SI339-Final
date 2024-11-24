@@ -384,7 +384,7 @@ span {
 
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .cof2 {
         width: 90vw;
         height: auto;

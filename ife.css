@@ -212,7 +212,7 @@ body {
 
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .pdf{
          height: 44px !important;
          width: 150px !important;

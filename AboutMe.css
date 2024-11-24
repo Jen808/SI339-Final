@@ -155,7 +155,7 @@ Profile img
 }
 
 
-@media (max-width: 1530px) {
+@media (min-width: 1530px) {
 
     #profile-img,
     #profile-img-s,
@@ -325,7 +325,7 @@ Profile background
 }
 
 
-@media (max-width: 1530px) {
+@media (min-width: 1530px) {
 
     .empty {
         margin-left: 0vw;
@@ -337,7 +337,7 @@ Profile background
 }
 
 
-/* @media (max-width: 1420px) {
+/* @media (min-width: 1420px) {
 
 
 
@@ -800,7 +800,7 @@ Profile background
 
 
 
-@media (max-width: 1420px) {
+@media (min-width: 1420px) {
 
     .p-img-section {
         display: none;
@@ -818,7 +818,7 @@ Profile background
 
 
 
-@media (max-width: 756px) {
+@media (min-width: 756px) {
 
     .list-item {
         font-size: 22px;
@@ -1325,7 +1325,7 @@ span:hover {
 
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 
     .main-content {
         margin-top: 150px;

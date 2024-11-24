@@ -70,7 +70,7 @@ body {
 }
 
 .title-box {
-    color: #CF845F;
+    color: #654332;
     font-family: 'Roboto', sans-serif;
     font-size: 3.5vw;
     font-style: normal;
@@ -170,7 +170,7 @@ body {
 .background {
     width: 60vw;
     height: 20vw;
-    background-color: #CF845F;
+    background-color: #654332;
 
 }
 
@@ -253,11 +253,11 @@ body {
 
 
 .oifm:hover {
-    background-color: #CF845F !important;
+    background-color: #654332 !important;
 }
 
 .oifd:hover {
-    background-color: #CF845F !important;
+    background-color: #654332 !important;
 
 }
 
@@ -313,7 +313,7 @@ body {
 .sub-title {
     font-family: 'Inter', sans-serif;
     font-size: 1.5em;
-    color: #CF845F;
+    color: #654332;
     font-weight: 700;
     text-align: center;
     margin-bottom: 5vw;
@@ -447,7 +447,7 @@ ul.a-3 {
 .under-name {
     font-size: 1.2em;
     padding-bottom: 3vw;
-    color: #81A196;
+    color: #425c53;
     font-weight: 600;
     text-decoration: underline;
 }
@@ -607,7 +607,7 @@ li {
 .e-3-1 {
     font-size: 1.4em;
     font-weight: 600;
-    color: #CF845F;
+    color: #654332;
     line-height: 2vw;
 
 }
@@ -669,7 +669,7 @@ li a {
 }
 
 li a:hover {
-    color: #CF845F;
+    color: #654332;
     text-decoration: underline;
 }
 
@@ -695,7 +695,7 @@ pj shift button
 
 
 .shift-previous {
-    background-color: #CF845F;
+    background-color: #654332;
     margin-right: 2vw;
     cursor: none;
     color: white;
@@ -712,7 +712,7 @@ pj shift button
 
 
 .shift-next {
-    border: 1px solid #CF845F;
+    border: 1px solid #654332;
     cursor: none;
     color: #543C32;
     font-size: 1vw;

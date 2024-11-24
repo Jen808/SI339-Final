@@ -1,4 +1,4 @@
-@media (min-width: 1300px) {
+@media (max-width: 1300px) {
     .title {
 
 
@@ -14,7 +14,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .title {
         width: 92%;
         flex-direction: column;

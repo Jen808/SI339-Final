@@ -531,7 +531,7 @@ span {
 
 
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
 
     .intro {
         margin-top: 15vw;
@@ -543,7 +543,7 @@ span {
 
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     body {
         margin-top: 20vw;
 

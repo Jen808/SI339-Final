@@ -150,7 +150,7 @@ button:hover {
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     
     #feedbackBtn {
         font-size: 14px !important;

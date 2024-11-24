@@ -31,7 +31,7 @@ header
 }
 
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
 
     .header {
         position: fixed;
@@ -77,7 +77,7 @@ header
 
 
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
 
     .logo {
         position: fixed;
@@ -100,7 +100,7 @@ header
 }
 
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
     .menu {
         display: none;
         flex-direction: column;
@@ -224,7 +224,7 @@ footer
 
 
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
     .footer {
         padding: 5vw 0;
         height: 120px;
@@ -302,7 +302,7 @@ burger
 }
 
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
 
     .menu.open {
         transform: translateX(0);
@@ -382,7 +382,7 @@ burger
 
 
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
 
     .burger-footer {
         display: flex;

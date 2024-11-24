@@ -72,7 +72,7 @@ body {
 }
 
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
 
     .mainimg {
         width: 18vw;
@@ -88,7 +88,7 @@ body {
 
 
 
-@media (min-width: 756px) {
+@media (max-width: 756px) {
 
     .mainimg {
         width: 18vw;
@@ -756,7 +756,7 @@ pj shift button
 /* ====================================================================================== */
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
     html,
     body {
@@ -1127,13 +1127,13 @@ survery
     .journeymap {
         width: 100%;
         /* Ensures these elements don't exceed the screen width */
-        min-width: 100%;
+        max-width: 100%;
         /* Prevents them from being larger than the viewport */
         overflow-x: hidden;
     }
 
     img {
-        min-width: 100%;
+        max-width: 100%;
         /* Ensures images don't overflow */
         height: auto;
         /* Maintains aspect ratio */

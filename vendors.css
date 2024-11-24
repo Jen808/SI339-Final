@@ -330,7 +330,7 @@ pj shift button
 
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .frame {
         display: flex;
         flex-direction: row;

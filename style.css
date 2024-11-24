@@ -61,7 +61,7 @@ Home - Main
     background-position: center;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
 
     .home-main {
         height: 50vh;
@@ -87,7 +87,7 @@ Home - Main
     animation: fadeIn 0.8s ease-in;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
 
     .intro-overlay {
         position: sticky;
@@ -113,14 +113,14 @@ Home - Main
 
 
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
     .intro-name{
         font-size: 3.8em;
 
     }
 }
 
-@media (min-width: 580px) {
+@media (max-width: 580px) {
     .intro-name{
         font-size: 2.8em;
         text-align: center;
@@ -148,19 +148,21 @@ Home - Main
 
 
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
     .intro-me{
         font-size: 16px;
         width: 500px;
     }
 }
 
-@media (min-width: 580px) {
+@media (max-width: 580px) {
     .intro-me{
         font-size: 16px;
         line-height: 20px;
         width: 80vw;
     }
+
+
 }
 
 
@@ -215,7 +217,7 @@ a.github-button{
 }
 
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
     .intro-github{
         font-size: 14px;
     }
@@ -223,7 +225,7 @@ a.github-button{
 
 
 
-@media (min-width: 580px) {
+@media (max-width: 580px) {
     .intro-github{
         font-size: 14px;
         width: 60vw;
@@ -314,7 +316,7 @@ Home - UX
 
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
 
     .pj-center {
         padding-top: 5em;
@@ -346,7 +348,7 @@ Home - UX
 
 
 
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
 
     .projects {
         display: grid;
@@ -359,7 +361,7 @@ Home - UX
 }
 
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
 
     .projects {
         display: grid;
@@ -374,7 +376,7 @@ Home - UX
 
 
 
-@media (min-width: 530px) {
+@media (max-width: 530px) {
 
     .projects {
         display: flex;

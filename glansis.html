@@ -26,6 +26,11 @@
             padding: 15px !important;
             border-radius: 30px !important;
         }
+        @media (max-width: 756px) {
+            .custom-cursor {
+                display: hidden;
+            }
+        }
 
         /* .menu-toggle {
             display: none;
@@ -68,9 +73,9 @@
 
             <p>
                 <label>
-                  
-                        Your feedback helps me a lot
-                
+
+                    Your feedback helps me a lot
+
                     <textarea name="feedback"></textarea>
                 </label>
             </p>
@@ -94,6 +99,17 @@
             const customCursor = document.createElement('div');
             customCursor.classList.add('custom-cursor');
             document.body.appendChild(customCursor);
+
+            const updateCursorVisibility = () => {
+                if (window.innerWidth < 769) {
+                    customCursor.style.display = 'hidden';
+                } else {
+                    customCursor.style.display = 'visible';
+                }
+            };
+
+            updateCursorVisibility();
+            window.addEventListener('resize', updateCursorVisibility);
 
             document.addEventListener('mousemove', (e) => {
                 customCursor.style.left = `${e.clientX}px`;
@@ -503,7 +519,7 @@ Header
             </video>
 
         </div>
-<!-- 
+        <!-- 
 
         <script>
             const video1 = document.getElementById('video1');

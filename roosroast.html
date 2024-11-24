@@ -26,6 +26,11 @@
             padding: 15px !important;
             border-radius: 30px !important;
         }
+        @media (max-width: 756px) {
+            .custom-cursor {
+                display: hidden;
+            }
+        }
     </style>
 
 
@@ -63,9 +68,9 @@
 
             <p>
                 <label>
-                 
-                        Your feedback helps me a lot
-      
+
+                    Your feedback helps me a lot
+
                     <textarea name="feedback"></textarea>
                 </label>
             </p>
@@ -90,6 +95,17 @@
             const customCursor = document.createElement('div');
             customCursor.classList.add('custom-cursor');
             document.body.appendChild(customCursor);
+
+            const updateCursorVisibility = () => {
+                if (window.innerWidth < 769) {
+                    customCursor.style.display = 'hidden';
+                } else {
+                    customCursor.style.display = 'visible';
+                }
+            };
+
+            updateCursorVisibility();
+            window.addEventListener('resize', updateCursorVisibility);
 
             document.addEventListener('mousemove', (e) => {
                 customCursor.style.left = `${e.clientX}px`;
@@ -481,24 +497,24 @@ Header
     <div class="title">
 
         <!-- <img src="src/main-rr.png" alt="GLNASIS Representative Image" class="mainimg"> -->
-         <div class="mainimg-container">
+        <div class="mainimg-container">
             <video controls autoplay muted class="mainimg1" id="video1">
                 <source src="src/vid/RR-mobile.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-    
+
             </video>
-    
+
             <video controls autoplay muted class="mainimg2" id="video2">
                 <source src="src/vid/RR-desk.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-    
+
             </video>
 
-         </div>
+        </div>
 
 
 
-<!-- 
+        <!-- 
         <script>
             const video1 = document.getElementById('video1');
             const video2 = document.getElementById('video2');

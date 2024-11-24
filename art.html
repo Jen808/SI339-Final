@@ -19,6 +19,14 @@
     <title>Art Gallery</title>
 
     <style>
+        @media (max-width: 756px) {
+            .custom-cursor {
+                display: hidden;
+            }
+        }
+    </style>
+
+    <style>
         .art {
             font-weight: 800 !important;
             background-color: #FFDFDF !important;
@@ -67,9 +75,9 @@
 
             <p>
                 <label>
-                    
-                        Your feedback helps me a lot
-                  
+
+                    Your feedback helps me a lot
+
                     <textarea name="feedback"></textarea>
                 </label>
             </p>
@@ -93,6 +101,17 @@
             const customCursor = document.createElement('div');
             customCursor.classList.add('custom-cursor');
             document.body.appendChild(customCursor);
+
+            const updateCursorVisibility = () => {
+                if (window.innerWidth < 769) {
+                    customCursor.style.display = 'hidden';
+                } else {
+                    customCursor.style.display = 'visible';
+                }
+            };
+
+            updateCursorVisibility();
+            window.addEventListener('resize', updateCursorVisibility);
 
             document.addEventListener('mousemove', (e) => {
                 customCursor.style.left = `${e.clientX}px`;
@@ -319,9 +338,9 @@ Header
         <div class="header-right">
 
             <nav class="menu" id="navMenu">
-                <a href="AboutMe.html" class="ame">About Me</a>
+                <!-- <a href="AboutMe.html" class="ame">About Me</a> -->
                 <a href="index.html#UX-Design" class="ux">UX Design</a>
-                <a href="chs.html" class="chs">Promotional Materials</a>
+                <!-- <a href="chs.html" class="chs">Promotional Materials</a> -->
                 <a href="art.html" class="art">Art Gallery</a>
                 <a href="src/JenniferJung_UXDesignerResume(Nov.24)_Digital.pdf" target="_blank" class="my">Resume</a>
 
@@ -367,7 +386,7 @@ Header
     <div class="content-overlay" id="contentOverlay"></div>
 
 
-<!-- =================================
+    <!-- =================================
 Main
 ================================= -->
 
@@ -385,7 +404,8 @@ Main
                 <div class="title">Fine Art</div>
                 <div class="content">
                     <div class="photos">
-                        <img src="src/art/Daincing in the Rain.jpg" class="fa" id="photo1" alt="Dancing in the Rain, watercolor">                        
+                        <img src="src/art/Daincing in the Rain.jpg" class="fa" id="photo1"
+                            alt="Dancing in the Rain, watercolor">
                         <img src="src/art/Pen World.jpg" class="fa" alt="Penworld, watercolor">
                     </div>
 
@@ -431,8 +451,9 @@ Main
                     <div class="title">Branding Design</div>
                     <div class="content">
                         <div class="photos">
-                            <img src="src/art/Final Project Logo Design_Jung.png" class="bd" alt="SMASF Branding Concept">
-                            <img src="src/art/summary.png" class="bd"  alt="SMASF Branding Board">
+                            <img src="src/art/Final Project Logo Design_Jung.png" class="bd"
+                                alt="SMASF Branding Concept">
+                            <img src="src/art/summary.png" class="bd" alt="SMASF Branding Board">
 
 
                         </div>
@@ -456,7 +477,7 @@ Main
                     <div class="title">Logo Design</div>
                     <div class="content">
                         <div class="photos">
-                            <img src="src/art/Business card sample.jpg" class="ld"  alt="eVolt Business card">
+                            <img src="src/art/Business card sample.jpg" class="ld" alt="eVolt Business card">
                             <img src="src/art/tally.jpg" class="ld" alt="Tally Shoppers bag">
                             <img src="src/art/sdfdfesdf.jpg" class="ld" alt="Galileo optical Business card">
 
@@ -505,7 +526,8 @@ Main
                     <div class="title">Poster Design</div>
                     <div class="content">
                         <div class="photos">
-                            <img src="src/art/Jung_Jennifer Week4 Movie poster type.jpg" class="pod" alt="BalckMail dark poster">
+                            <img src="src/art/Jung_Jennifer Week4 Movie poster type.jpg" class="pod"
+                                alt="BalckMail dark poster">
                             <img src="src/art/Untitled-1-Recovered.jpg" class="pod" alt="orange juice product poster">
                         </div>
                         <div class="des" id="pod">
@@ -658,7 +680,7 @@ Main
             document.body.classList.remove('menu-open');
         });
 
-                // =========================
+        // =========================
         // Feedback
         // =========================
 
@@ -691,7 +713,7 @@ Main
             }
         });
 
-                // =========================
+        // =========================
         // Hotjar
         // =========================
 
